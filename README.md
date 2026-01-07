@@ -1,45 +1,126 @@
-Case Study: Cyclistic Bike-Share Analysis 🚴‍♂️
-Status: Concluído (Projeto de Certificação Google Data Analytics)
+🚴‍♂️ ESTUDO DE CASO: ANÁLISE DE DADOS DA CYCLISTIC
 
-1. Contexto e Objetivo do Projeto
-A Cyclistic é uma empresa de compartilhamento de bicicletas em Chicago. O sucesso financeiro da empresa depende da maximização do número de membros anuais, que são mais lucrativos que os ciclistas casuais.
+📋 SOBRE O PROJETO
 
-Este projeto analisa dados históricos de 2022 para identificar padrões de comportamento distintos entre estes dois grupos. O objetivo final é responder:
+Este projeto faz parte do Certificado Profissional de Análise de Dados do Google. O objetivo é analisar os dados históricos de trajetos da empresa fictícia de partilha de bicicletas, Cyclistic, sediada em Chicago. O desafio consiste em identificar como os Membros Anuais e os Ciclistas Casuais utilizam as bicicletas de forma diferente para orientar uma nova estratégia de marketing.
 
-Como os membros e os casuais utilizam as bicicletas de forma diferente?
-
-Por que um ciclista casual optaria pelo plano anual?
-
-Como usar a mídia digital para converter usuários casuais?
-
-2. Tecnologias e Ferramentas
+🛠️ FERRAMENTAS UTILIZADAS
 Linguagem: Python
 
-Ambiente: Google Colab
+Bibliotecas: Pandas, Matplotlib, Seaborn
 
-Bibliotecas de Manipulação: Pandas
+Ambiente: Google Colab / Jupyter Notebook
 
-Bibliotecas de Visualização: Matplotlib e Seaborn
+PERGUNTAS DE NEGOCIO
 
-Metodologia: Processo de Análise de Dados do Google (Perguntar, Preparar, Processar, Analisar, Compartilhar e Agir).
+Como os membros anuais e os ciclistas casuais usam as bicicletas da Cyclist de maneira diferente?
 
-3. Estrutura do Pipeline
-Coleta: Importação de 12 datasets mensais (Jan/2022 a Dez/2022) em formato CSV.
+Por que os usuários casuais iriam querer adquirir planos anuais da Cyclist?
 
-Processamento: Limpeza de dados, tratamento de nulos e criação de variáveis temporais (duração da viagem e dia da semana).
+Como a Cyclist pode usar a mídia digital para influenciar os usuários casuais a se tornarem membros?
 
-Análise: Agregação de dados para comparar médias de uso e volumes por tipo de bicicleta.
+⚙️ PROCESSO DE ANÁLISE (METODOLOGIA)
 
-Ação: Formulação de recomendações baseadas em evidências.
+O projeto foi estruturado seguindo as seis etapas do processo de análise de dados:
 
-4. Principais Conclusões (Insights)
-Padrões de Uso: Identificou-se que membros anuais e ciclistas casuais possuem motivações e horários de preferência distintos (ex: uso para lazer vs. uso para transporte diário).
+1. PERGUNTAR (ASK)
+   
+O objetivo principal é entender como os membros anuais e os ciclistas casuais usam as bicicletas de forma diferente.
 
-Potencial de Conversão: Usuários casuais que realizam viagens longas ou frequentes são o público-alvo ideal, pois o plano anual oferece melhor custo-benefício para este perfil.
+Problema de Negócio: Como converter usuários casuais em membros anuais?
 
-5. Recomendações Estratégicas
-Marketing de Custo-Benefício: Criar campanhas que demonstrem a economia do plano anual para quem realiza viagens frequentes.
+Principais Interessados: Lily Moreno (Diretora de Marketing) e equipe executiva da Cyclistic.
 
-Presença Digital: Utilizar anúncios personalizados em redes sociais focados em usuários que já utilizam o serviço em horários e rotas específicas (como rotas turísticas ou horários de pico).
+2. PREPARAR (PREPARE)
+   
+Os dados foram obtidos de fontes primárias da Cyclistic (dados públicos).
 
-Incentivos de Conversão: Oferecer promoções e descontos exclusivos para a primeira adesão ao plano de membro.
+Armazenamento: Os dados originais foram organizados em arquivos CSV.
+
+Verificação: Identificamos as colunas de tempo (início e fim da viagem), localização das estações e tipos de usuários.
+
+3. PROCESSAR (PROCESS)
+
+Utilizei Python para garantir a escalabilidade e a reprodutibilidade da limpeza.
+
+Limpeza de Dados: Remoção de duplicatas e tratamento de valores ausentes (NaN).
+
+Engenharia de Dados: Criação das colunas duracao_viagem(min) e dia_semana.
+
+Tradução: Padronização das categorias para o português (Ex: classic_bike para Bicicleta Clássica).
+
+4. ANALISAR (ANALYZE)
+
+Nesta etapa, os dados foram agregados e resumidos.
+
+Cálculos: Realização de médias, contagens e agrupamentos por tipo_usuario.
+
+Identificação de Tendências: Cruzamento entre volume de viagens e dias da semana para encontrar padrões de comportamento.
+
+5. COMPARTILHAR (SHARE)
+
+A visualização foi feita com Matplotlib e Seaborn, focando em clareza para stakeholders não técnicos.
+
+Foco: Gráficos que comparam diretamente as métricas entre os dois grupos de usuários.
+
+📂 ORIGEM E LICENÇA DOS DADOS
+
+Os dados utilizados nesta análise são reais e referem-se ao histórico de viagens da Cyclistic, operada pela Motivate International Inc.
+
+Fonte dos Dados Brutos: Os arquivos utilizados foram obtidos diretamente do servidor de armazenamento da empresa: Cyclistic Trip Data Index.
+
+Licença de Uso: Os dados foram disponibilizados sob o Acordo de Licença de Dados da Divvy/Cyclistic, que permite a análise, processamento e exibição das informações para fins de estudo de caso.
+
+Privacidade e Ética: De acordo com as normas de proteção de dados, todas as informações de identificação pessoal (PII) dos ciclistas, como nomes, números de cartão de crédito ou endereços residenciais, foram removidas ou omitidas na fonte para garantir a privacidade dos usuários.
+
+Acessibilidade: Uso de cores distintas e rótulos de dados (labels) para facilitar a interpretação.
+
+6. AGIR (ACT)
+
+Conclusão baseada nos insights para apoiar a tomada de decisão.
+
+Ações Sugeridas: Campanhas de marketing direcionadas para o público casual no verão e foco na economia do plano anual para viagens longas.
+
+🛠️ PROCESSAMENTO E LIMPEZA DE DADOS
+
+Nesta etapa, os dados brutos foram transformados em um conjunto de dados estruturado e confiável. As principais técnicas aplicadas foram:
+
+1. PADRONIZAÇÃO E TRADUÇÃO DE CATEGORIAS
+   
+Os dados originais continham termos em inglês que dificultariam a apresentação final.
+
+Técnica: Utilização do método .map() com dicionários Python para converter tipos de bicicletas e usuários.
+
+Resultado: Dados amigáveis para o público local (Ex: de classic_bike para Bicicleta Clássica).
+
+2. TRATAMENTO DE VALORES AUSENTES (MISSING DATA)
+
+Datasets de mobilidade urbana costumam apresentar falhas em registros de estações.
+
+Técnica: Identificação de nulos com .isnull().sum() e remoção estratégica de linhas com dados incompletos usando .dropna().
+
+Impacto: Garantia de que cálculos de localização e tempo não fossem distorcidos por valores vazios.
+
+3. ENGENHARIA DE ATRIBUTOS (FEATURE ENGINEERING)
+
+Criação de novas variáveis a partir dos dados brutos para extrair insights ocultos.
+
+Cálculo de Duração: Subtração entre ended_at e started_at para obter o tempo total de cada viagem.
+
+Extração Temporal: Uso da função dt.day_name() para isolar o dia da semana e dt.hour para identificar horários de pico.
+
+Conversão de Unidades: Transformação de segundos para minutos para tornar a métrica de duração mais compreensível.
+
+4. FILTRAGEM DE INCONSISTÊNCIAS (DATA AUDIT)
+
+Em dados reais, podem ocorrer erros de sistema (viagens com duração negativa ou testes de manutenção).
+
+Técnica: Aplicação de filtros booleanos para remover viagens com duração inferior a 1 minuto (potenciais erros de travamento) ou viagens com datas inconsistentes.
+
+5. TIPAGEM E ORDENAÇÃO CATEGÓRICA
+
+Garantir que o computador entenda a lógica humana do tempo.
+
+Técnica: Uso de pd.Categorical para definir a ordem cronológica dos dias da semana (Domingo a Sábado).
+
+Resultado: Gráficos ordenados logicamente, evitando a ordem alfabética padrão do Python.
