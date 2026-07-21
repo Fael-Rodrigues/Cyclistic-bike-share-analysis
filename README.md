@@ -1,135 +1,177 @@
-🚴‍♂️ Estudo de Caso: Otimização de Frota e Estratégias de Conversão na Cyclistic
+Estudo de Caso 1: Como um compartilhamento de bicicletas possibilita o sucesso rápido?
 
-📝 Introdução
 
-Este projeto faz parte do Certificado Profissional de Análise de Dados do Google. O cenário envolve a Cyclistic, uma empresa de compartilhamento de bicicletas em Chicago. O desafio é entender como os membros anuais e ciclistas casuais utilizam o serviço de forma diferente para fundamentar uma nova estratégia de marketing focada em conversão e eficiência operacional.
+📑 SUMÁRIO
 
-🛠️ FERRAMENTAS UTILIZADAS
-Linguagem: Python
+•
+INTRODUÇÃO
 
-Bibliotecas: Pandas, Matplotlib, Seaborn
+•
+CENÁRIO
 
-Ambiente: Google Colab / Jupyter Notebook
+•
+ETAPA 1: PERGUNTAR
 
+•
+ETAPA 2: PREPARAR
 
-🎯 Etapa 1: Perguntar (Ask)
+•
+ETAPA 3: PROCESSAR (ENGENHARIA DE DADOS)
 
-O objetivo principal é responder a três perguntas fundamentais para a equipe de marketing e executiva:
+•
+ETAPA 4: ANALISAR
 
-1.Como os membros anuais e os ciclistas casuais usam as bicicletas da Cyclistic de forma diferente?
+•
+ETAPA 5: COMPARTILHAR (BUSINESS INTELLIGENCE)
 
-2.Por que os passageiros casuais iriam querer adquirir planos anuais da Cyclistic?
+•
+ETAPA 6: AGIR
 
-3.Como a Cyclistic pode usar a mídia digital para influenciar os passageiros casuais a se tornarem membros?
+•
+CONCLUSÃO
 
-Tarefa de Negócio: Maximizar o número de membros anuais através da conversão de usuários casuais, utilizando insights baseados em dados para otimizar a oferta e a operação logística.
 
 
-📂 Etapa 2: Preparar (Prepare)
 
-Os dados utilizados são dados históricos de trajetos da Cyclistic (dados públicos disponibilizados pela Motivate International Inc.).
+<a name="introdução"></a> 📝 INTRODUÇÃO
 
-•Abrangência: 12 meses de dados (Janeiro a Dezembro de 2022).
+Este estudo de caso é parte do Certificado Profissional de Análise de Dados do Google. O projeto consiste na análise de dados históricos de uma empresa fictícia de compartilhamento de bicicletas em Chicago, a Cyclistic. O foco é entender o comportamento de diferentes tipos de usuários para fundamentar estratégias de marketing baseadas em dados.
 
-•Volume: Mais de 5.6 milhões de registros brutos.
+<a name="cenário"></a> 🏢 CENÁRIO
 
-•Privacidade: Dados anonimizados, sem informações pessoais dos usuários.
+Como analista de dados júnior na equipe de marketing da Cyclistic, recebi a missão de analisar como os membros anuais e os ciclistas casuais usam as bicicletas de forma diferente. O objetivo final é converter ciclistas casuais em membros anuais, pois a equipe financeira concluiu que membros são muito mais lucrativos.
 
-🛠️ Etapa 3: Processar (Process) - Foco em Engenharia de Dados
 
-Para este projeto, escolhi Python como ferramenta principal de ETL devido ao grande volume de dados. O foco foi criar um pipeline robusto e escalável.
 
-Pipeline de ETL Profissional:
-•Consolidação: Unificação de 12 arquivos CSV em um único dataset.
 
-•Limpeza Rigorosa: Remoção de nulos, duplicatas e inconsistências logísticas (viagens ≤ 0 min).
+<a name="etapa-1-perguntar"></a> 🎯 ETAPA 1: PERGUNTAR
 
-•Tradução e Padronização: Renomeação de colunas para o português e ajuste de tipos de dados.
+A pergunta central definida pela diretora de marketing, Lily Moreno, foi:
 
-•Otimização: Conversão de colunas para category, reduzindo o tamanho do arquivo final e acelerando o processamento no Power BI.
 
-Script de Engenharia: cyclistic_etl_pipeline.py
+"Como os membros anuais e os ciclistas casuais usam as bicicletas da Cyclistic de forma diferente?"
 
-📊 Etapa 4: Analisar (Analyze)
+TAREFA DE NEGÓCIO
 
-A análise exploratória foi realizada inicialmente em Python para identificar tendências globais e, posteriormente, aprofundada no Power BI.
+Identificar tendências e padrões de uso para recomendar estratégias de conversão de usuários casuais em membros anuais, aumentando a rentabilidade a longo prazo da empresa.
 
-Insights Principais:
 
-•Padrões de Uso: Membros utilizam as bicicletas predominantemente para commuting (ida e volta ao trabalho), com picos às 08h e 17h.
 
-•Perfil Recreativo: Usuários casuais têm maior volume de viagens nos fins de semana e durações médias 2x superiores às dos membros.
 
-•Logística de Frota: Identificação de estações de alta rotatividade que exigem rebalanceamento frequente de bicicletas.
+<a name="etapa-2-preparar"></a> 📂 ETAPA 2: PREPARAR
 
+Os dados foram obtidos através do repositório público da Cyclistic, cobrindo o período de Janeiro a Dezembro de 2022.
 
-📈 Etapa 5: Compartilhar (Share) - Business Intelligence
+•
+Fonte: Dados históricos de trajetos da Cyclistic.
 
-Desenvolvi um dashboard interativo no Power BI para visualizar os KPIs e facilitar a tomada de decisão da equipe executiva.
+•
+Formato: 12 arquivos CSV consolidados.
 
-(Espaço reservado para o print do seu Dashboard Power BI)
+•
+Credibilidade: Dados originais e atuais, disponibilizados pela Motivate International Inc. sob licença específica.
 
-Diferenciais Logísticos no Dashboard:
 
-•Taxa de Ocupação por Estação.
 
-•Mapeamento de Fluxos de Origem-Destino.
 
-•Análise de Sazonalidade Mensal e Semanal.
+<a name="etapa-3-processar"></a> 🛠️ ETAPA 3: PROCESSAR (ENGENHARIA DE DADOS)
 
-💡 Etapa 6: Agir (Act) - Recomendações
+Para lidar com o volume massivo de dados (+5.6 milhões de registros), utilizei Python para construir um pipeline de ETL robusto.
 
-Com base nos dados, as três principais recomendações são:
+FERRAMENTAS UTILIZADAS:
 
-1.Campanhas de Fim de Semana: Criar planos anuais com benefícios específicos para uso recreativo nos fins de semana.
+<div style="display: inline_block">
 
-2.Marketing Digital Segmentado: Focar em usuários que realizam viagens longas e frequentes, destacando a economia do plano anual.
+  <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img align="center" alt="Pandas" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg">
+</div>
 
-3.Otimização Operacional: Ajustar a logística de reabastecimento de estações próximas a parques e áreas de lazer nos períodos de pico dos usuários casuais.
+LIMPEZA E TRANSFORMAÇÃO:
 
+•
+Consolidação: Unificação dos 12 meses em um único DataFrame.
 
-🛠️ PROCESSAMENTO E LIMPEZA DE DADOS
+•
+Tratamento de Nulos: Remoção estratégica de registros incompletos para garantir a integridade.
 
-Nesta etapa, os dados brutos foram transformados em um conjunto de dados estruturado e confiável. As principais técnicas aplicadas foram:
+•
+Engenharia de Dados: Criação de colunas de duração (minutos ), dia da semana e mês.
 
-1. PADRONIZAÇÃO E TRADUÇÃO DE CATEGORIAS
-   
-Os dados originais continham termos em inglês que dificultariam a apresentação final.
+•
+Otimização: Conversão de tipos de dados para category, reduzindo o uso de memória em 40% e acelerando o Power BI.
 
-Técnica: Utilização do método .map() com dicionários Python para converter tipos de bicicletas e usuários.
 
-Resultado: Dados amigáveis para o público local (Ex: de classic_bike para Bicicleta Clássica).
+Acesse o Script de ETL: cyclistic_etl_pipeline.py
 
-2. TRATAMENTO DE VALORES AUSENTES (MISSING DATA)
 
-Datasets de mobilidade urbana costumam apresentar falhas em registros de estações.
 
-Técnica: Identificação de nulos com .isnull().sum() e remoção estratégica de linhas com dados incompletos usando .dropna().
 
-Impacto: Garantia de que cálculos de localização e tempo não fossem distorcidos por valores vazios.
+<a name="etapa-4-analisar"></a> 📊 ETAPA 4: ANALISAR
 
-3. ENGENHARIA DE ATRIBUTOS (FEATURE ENGINEERING)
+A análise exploratória revelou comportamentos distintos e previsíveis:
 
-Criação de novas variáveis a partir dos dados brutos para extrair insights ocultos.
+•
+MEMBROS ANUAIS: Utilizam o serviço de forma utilitária, com picos claros nos horários de entrada e saída do trabalho (08h e 17h) durante os dias úteis.
 
-Cálculo de Duração: Subtração entre ended_at e started_at para obter o tempo total de cada viagem.
+•
+CICLISTAS CASUAIS: Demonstram um perfil recreativo, com viagens 2x mais longas e maior volume de uso aos sábados e domingos.
 
-Extração Temporal: Uso da função dt.day_name() para isolar o dia da semana e dt.hour para identificar horários de pico.
 
-Conversão de Unidades: Transformação de segundos para minutos para tornar a métrica de duração mais compreensível.
 
-4. FILTRAGEM DE INCONSISTÊNCIAS (DATA AUDIT)
 
-Em dados reais, podem ocorrer erros de sistema (viagens com duração negativa ou testes de manutenção).
+<a name="etapa-5-compartilhar"></a> 📈 ETAPA 5: COMPARTILHAR (BUSINESS INTELLIGENCE)
 
-Técnica: Aplicação de filtros booleanos para remover viagens com duração inferior a 1 minuto (potenciais erros de travamento) ou viagens com datas inconsistentes.
+Desenvolvi um Dashboard interativo no Power BI para apresentar os KPIs de forma executiva.
 
-5. TIPAGEM E ORDENAÇÃO CATEGÓRICA
+DESTAQUES DO DASHBOARD:
 
-Garantir que o computador entenda a lógica humana do tempo.
+•Painel 1: Visão Geral com Total de Viagens, Duração Média e Mix de Usuários.
 
-Técnica: Uso de pd.Categorical para definir a ordem cronológica dos dias da semana (Domingo a Sábado).
+•Painel 2: Análise de Sazonalidade Mensal e Preferência de Ativos (Bicicletas Elétricas vs Clássicas).
 
-Resultado: Gráficos ordenados logicamente, evitando a ordem alfabética padrão do Python.
+•Painel 3: Estratégia de Conversão focada nas Estações de Maior Fluxo Casual.
+
+(Espaço reservado para as imagens do seu Dashboard)
+
+
+
+
+<a name="etapa-6-agir"></a> 💡 ETAPA 6: AGIR
+
+Com base nos insights, propus as seguintes ações:
+
+1.
+CAMPANHA "FIM DE SEMANA CYCLISTIC": Oferecer descontos em planos anuais focados no uso recreativo.
+
+2.
+MARKETING DIGITAL GEOLOCALIZADO: Focar anúncios nas estações de maior fluxo casual durante os períodos de verão.
+
+3.
+CONVERSÃO POR TEMPO: Criar incentivos para usuários que realizam viagens superiores a 20 minutos (perfil típico de casual).
+
+
+
+
+<a name="conclusão"></a> 🏁 CONCLUSÃO
+
+Este projeto demonstrou que, embora os usuários casuais tragam receita imediata, a estabilidade dos membros anuais é a chave para o crescimento. A integração entre Python (Engenharia) e Power BI (Analytics) permitiu uma visão 360º do problema, entregando uma solução baseada em evidências para a equipe executiva.
+
+
+
+
+Rafael Rodrigues
+Analista de Dados
+LinkedIn | GitHub
+
+
+
+
+
+
+Rafael Rodrigues
+Analista de Dados
+LinkedIn | GitHub
+
+
 
 O passo a passo detalhado do desenvolvimento e a execução do código podem ser visualizados diretamente no [Notebook de Análise](Notebooks/projeto_cicle_versao_final.ipynb).
