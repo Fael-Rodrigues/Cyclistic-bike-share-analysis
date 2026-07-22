@@ -81,4 +81,11 @@ Valores de duração de viagem negativos, zerados e abaixo de 1.
 
 Após a limpeza e consolidação dos dados em uma tabela, foram retornadas 4.270.103 linhas para a análise.
 
+## Análise Exploratória
+
+Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros de passeio no conjunto de dados final. Para observar tendências diferenciadas entre o uso por usuários casuais e membros anuais, foram desenvolvidas visualizações diretamente no Google colab. Estes mesmos gráficos podem ser acessados de uma forma mais interativa nesse Dashboard desenvolvido no Microsoft Power BI.
+
+![Distribuicao percentual de passeos](./imagens/imagem_1.png)
+
+Podemos observar que a base de usuários é composta por 59% de membros, que garantem receita recorrente, enquanto mais de 40% são casuais, representando nossa maior oportunidade de expansão de assinaturas.
 
