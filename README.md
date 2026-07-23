@@ -1,6 +1,6 @@
 # 🚴 Cyclistic Bike Share Analysis
 
-Business Case desenvolvido durante o Google Data Analytics Professional Certificate utilizando Python, SQL, Excel e Power BI para gerar insights de negócio para a empresa Cyclistic.
+Business Case desenvolvido durante o [Google Data Analytics Certificate](https://grow.google/certificates/data-analytics/#?modal_active=none) utilizando Python, SQL, Excel e Power BI para gerar insights de negócio para a empresa Cyclistic.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 
@@ -200,11 +200,11 @@ Promoções aplicadas nos meses de inverno, em dias com temperaturas menos rigor
 
 Analista de Dados | Logística | Power BI | SQL | Python
 
-LinkedIn
+[LinkedIn](https://www.linkedin.com/in/rafael-r-nunes/) 
 
 GitHub
 
-Email
+[Entre em contato por e-mail](mailto:rafael_r_nunes@hotmail.com)
 
 
 
