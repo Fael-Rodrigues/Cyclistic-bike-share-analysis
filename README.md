@@ -82,7 +82,7 @@ Após a limpeza e consolidação dos dados em uma tabela, foram retornadas 4.270
 
 ## Análise Exploratória
 
-Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros de passeio no conjunto de dados final. Para observar tendências diferenciadas entre o uso por usuários casuais e membros anuais, foram desenvolvidas visualizações diretamente no Google colab. Estes mesmos gráficos podem ser acessados em forma de storytelling atraves desse link feito em power bi ![Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZmRmNDlhZTYtMGE0NC00MGVjLWE5ZjUtZWEzMDQxOWY4OWI3IiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9) desenvolvido no Microsoft Power BI.
+Foram analisados os dados de viagem de aproximadamente 4.2 milhões de registros de passeio no conjunto de dados final. Para observar tendências diferenciadas entre o uso por usuários casuais e membros anuais, foram desenvolvidas visualizações diretamente no Google colab. Estes mesmos gráficos podem ser acessados em forma de storytelling atraves desse link feito em power bi [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZmRmNDlhZTYtMGE0NC00MGVjLWE5ZjUtZWEzMDQxOWY4OWI3IiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9) desenvolvido no Microsoft Power BI.
 
 ### Membros x Casuais
 
